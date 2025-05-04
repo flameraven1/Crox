@@ -6,7 +6,6 @@ export default function Home() {
     const sendRequest = await fetch("/api/visit" , {
       method : "GET"
     });
-    // const response = await sendRequest.json()
     console.log(sendRequest)
   }
 
