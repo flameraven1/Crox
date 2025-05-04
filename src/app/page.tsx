@@ -3,6 +3,7 @@
 export default function Home() {
 
   const handleClick = async () =>{
+    window.open("/api/visit", "_blank");
     const sendRequest = await fetch("/api/visit" , {
       method : "GET"
     });
