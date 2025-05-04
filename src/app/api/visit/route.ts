@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export default async function GET (){
+export async function GET (){
     const access = await fetch("https://croxyproxy.com");
     const res = await access.text();
 
