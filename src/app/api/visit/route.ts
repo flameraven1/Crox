@@ -1,7 +1,10 @@
-export default async function GET (){
-    const access = await fetch("https://croxyproxy.com" , {
-        method : "GET"
-    });
+import { NextResponse } from "next/server";
 
-    console.log(access)
+export default async function GET (){
+    const access = await fetch("https://croxyproxy.com");
+    const res = await access.text();
+
+    console.log(res)
+
+    return NextResponse.json({res})
 }
